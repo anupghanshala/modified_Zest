@@ -25,10 +25,10 @@ namespace TyreDistributor.Tests
         }
 
         private const string ResultStatementOneAlfa = @"Order Receipt for Anywhere Tyre Shop
-	1 x Alfa Romeo Sports Utility Vehicle = $100.00
-Sub-Total: $100.00
-Tax: $7.25
-Total: $107.25";
+	1 x Alfa Romeo Sports Utility Vehicle = £100.00
+Sub-Total: £100.00
+Tax: £7.25
+Total: £107.25";
 
         [TestMethod]
         public void ReceiptOneBmw1()
@@ -43,10 +43,10 @@ Total: $107.25";
         }
 
         private const string ResultStatementOneBmw = @"Order Receipt for Anywhere Tyre Shop
-	1 x BMW Mini = $200.00
-Sub-Total: $200.00
-Tax: $14.50
-Total: $214.50";
+	1 x BMW Mini = £200.00
+Sub-Total: £200.00
+Tax: £14.50
+Total: £214.50";
 
         [TestMethod]
         public void ReceiptOneBmwX()
@@ -61,10 +61,10 @@ Total: $214.50";
         }
 
         private const string ResultStatementOneBmwEstate = @"Order Receipt for Anywhere Tyre Shop
-	1 x BMW Estate = $500.00
-Sub-Total: $500.00
-Tax: $36.25
-Total: $536.25";
+	1 x BMW Estate = £500.00
+Sub-Total: £500.00
+Tax: £36.25
+Total: £536.25";
         [TestMethod]
         public void HtmlReceiptOneAlfaRomeoSportWagon()
         {
@@ -78,7 +78,7 @@ Total: $536.25";
             Assert.AreEqual(HtmlResultStatementOneAlfaRomeoSportWagon, result);
         }
 
-        private const string HtmlResultStatementOneAlfaRomeoSportWagon = @"<html><body><h1>Order Receipt for Anywhere Tyre Shop</h1><ul><li>1 x Alfa Romeo Sports Utility Vehicle = $100.00</li></ul><h3>Sub-Total: $100.00</h3><h3>Tax: $7.25</h3><h2>Total: $107.25</h2></body></html>";
+        private const string HtmlResultStatementOneAlfaRomeoSportWagon = @"<html><body><h1>Order Receipt for Anywhere Tyre Shop</h1><ul><li>1 x Alfa Romeo Sports Utility Vehicle = £100.00</li></ul><h3>Sub-Total: £100.00</h3><h3>Tax: £7.25</h3><h2>Total: £107.25</h2></body></html>";
 
         [TestMethod]
         public void HtmlReceiptOneBmwMiniSeries()
@@ -92,7 +92,7 @@ Total: $536.25";
             Assert.AreEqual(HtmlResultStatementOneBmw1Series, bmwMiniReceipt.HtmlReceipt(company,lines));
         }
 
-        private const string HtmlResultStatementOneBmw1Series = @"<html><body><h1>Order Receipt for Anywhere Tyre Shop</h1><ul><li>1 x BMW Mini = $200.00</li></ul><h3>Sub-Total: $200.00</h3><h3>Tax: $14.50</h3><h2>Total: $214.50</h2></body></html>";
+        private const string HtmlResultStatementOneBmw1Series = @"<html><body><h1>Order Receipt for Anywhere Tyre Shop</h1><ul><li>1 x BMW Mini = £200.00</li></ul><h3>Sub-Total: £200.00</h3><h3>Tax: £14.50</h3><h2>Total: £214.50</h2></body></html>";
 
         [TestMethod]
         public void HtmlReceiptOneBmwEstate()
@@ -106,7 +106,7 @@ Total: $536.25";
             Assert.AreEqual(HtmlResultStatementOneBmwX5, bmwEstateReceipt.HtmlReceipt(company,lines));
         }
 
-        private const string HtmlResultStatementOneBmwX5 = @"<html><body><h1>Order Receipt for Anywhere Tyre Shop</h1><ul><li>1 x BMW Estate = $500.00</li></ul><h3>Sub-Total: $500.00</h3><h3>Tax: $36.25</h3><h2>Total: $536.25</h2></body></html>";
+        private const string HtmlResultStatementOneBmwX5 = @"<html><body><h1>Order Receipt for Anywhere Tyre Shop</h1><ul><li>1 x BMW Estate = £500.00</li></ul><h3>Sub-Total: £500.00</h3><h3>Tax: £36.25</h3><h2>Total: £536.25</h2></body></html>";
     }
 }
 
